@@ -1,0 +1,60 @@
+.wear__container {
+    padding: 32px 277px 40px 280px;
+}
+
+.wear__group {
+    padding: 0;
+    max-width: 1560px;
+}
+
+.wear__navigation-list {
+    column-gap: 48px;
+}
+
+.wear__navigation-link {
+    color: #ffffff;
+
+    &:hover,
+    &:focus {
+        color: #ffffff;
+        opacity: 0.7;
+    }
+}
+
+.wear__navigation-dropdown .nav-link {
+    color: #ffffff;
+    
+    &:hover,
+    &:focus {
+        opacity: 0.7;
+    }
+}
+
+.wear__navigation-dropdown .nav-link.show {
+    opacity: 0.7;
+    color: #ffffff;
+}
+
+.wear__toolbar-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.wear__toolbar-price {
+    color: #8C8F96;
+    margin-right: 5px;
+    margin-top: 6px;
+    font-family: "Cera Pro", sans-serif;
+    font-size: 13px;
+    line-height: 10px;
+    font-weight: 700;
+}
+
+.wear__toolbar-count {
+    color: #ffffff;
+    background-color: #49d0ff;
+    font-family: "Cera Pro", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+}

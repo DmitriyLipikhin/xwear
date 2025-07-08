@@ -1,0 +1,16 @@
+@mixin font-face($font-family, $font-weight, $font-style, $src-woff-2, $src-woff) {
+    @font-face {
+      font-family: $font-family;
+      font-weight: $font-weight;
+      font-style: $font-style;
+      src: $src-woff-2, $src-woff;
+      font-display: swap;
+    }
+  }
+  
+  @include font-face("RF Dewi Expanded", 600, normal, url("../../../assets/fonts/RFDewiExtended-Semibold.woff2") format("woff2"), url("../../../assets/fonts/RFDewiExtended-Semibold.woff") format("woff"));
+  @include font-face("RF Dewi Extended", 400, normal, url("../../../assets/fonts/RFDewiExtended-Regular.woff2") format("woff2"), url("../../../assets/fonts/RFDewiExtended-Regular.woff") format("woff"));
+  @include font-face("RF Dewi Expanded", 900, normal, url("../../../assets/fonts/RFDewiExpanded-Black.woff2") format("woff2"), url("../../../assets/fonts/RFDewiExpanded-Black.woff") format("woff"));
+  @include font-face("RF Dewi Expanded", 700, normal, url("../../../assets/fonts/RFDewiExtended-Bold.woff2") format("woff2"), url("../../../assets/fonts/RFDewiExtended-Bold.woff") format("woff"));
+  @include font-face("RF Dewi Expanded", 800, normal, url("../../../assets/fonts/RFDewiExpanded-Ultrabold.woff2") format("woff2"), url("../../../assets/fonts/RFDewiExpanded-Ultrabold.woff") format("woff"));
+  @include font-face("Cera Pro", 700, normal, url("../../../assets/fonts/CeraPro-Bold.woff2") format("woff2"), url("../../../assets/fonts/CeraPro-Bold.woff") format("woff"));

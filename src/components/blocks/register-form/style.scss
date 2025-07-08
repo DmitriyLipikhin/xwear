@@ -1,0 +1,67 @@
+.login__register-container {
+    border-radius: 5px; 
+    border: 1px #E9EAEE solid;
+    padding: 34px 40px 78px;
+    row-gap: 30px;
+}
+
+.login__register-form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.login__register-form-title {
+    font-size: 23px;
+    color: #303030;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 0;
+    margin-bottom: 26px;
+}
+
+.login__register-form-group {
+    display: flex;
+    flex-direction: column;
+    min-width: 585px;
+    padding: 14px 22px 16px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.login__register-form-label {
+    font-size: 13px;
+    color: #3c3d44;
+    font-weight: 600;
+}
+
+.login__register-form-input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: #424347;
+}
+
+.login__register-form-input::placeholder {
+    color: #424347;
+}
+
+.login__form-remember {
+    display: flex;
+    align-items: center;
+}
+
+.login__register-form-submit {
+    background-color: #121214;
+    border-radius: 5px;
+    font-weight: 800;
+    font-family: "RF Dewi Expanded";
+    font-size: 12px;
+    text-align: center;
+    min-height: 66px;
+    color: #ffffff;
+    align-self: center;
+    min-width: 302px;
+    padding: 23px;
+    border: none;
+}
