@@ -1,0 +1,156 @@
+.footer {
+    background-color: #121214;
+}
+
+.footer__container {
+    padding: 45px 286px 51px 280px;
+}
+
+.footer__row {
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: space-between;
+}
+
+.footer__column {
+    width: auto;
+    padding: 0;
+}
+
+.footer__list {
+    row-gap: 9px;
+}
+
+.footer__list .footer__list-social-title:last-child .active {
+    margin-top: 0;
+}
+
+.footer__list-title.active {
+    background: transparent;
+    border: none;
+    font-weight: 900;
+    font-family: "RF Dewi Expanded";
+    text-transform: uppercase;
+    padding: 0;
+    line-height: 28px;
+}
+
+.footer__list-link {
+    color: #dcdce0;
+    font-size: 15px;
+    line-height: 28px;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.footer__list-link:not(.active):hover {
+    background: transparent;
+    color: #ffffff;
+}
+
+.footer__list-logo {
+    margin-top: 50px;
+    padding: 0;
+}
+
+.footer__list-social-title.active {
+    padding: 0;
+    background: transparent;
+    border: none;
+    font-weight: 800;
+    font-family: "RF Dewi Expanded";
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 28px;
+    margin-top: 5px;
+    margin-bottom: -7px;
+}
+
+.footer__list-row {
+    margin-left: 0;
+    column-gap: 15px;
+}
+
+.footer__list-column {
+    padding: 0;
+    margin-left: 0;
+}
+
+.footer__list-social {
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.footer__list-form {
+    width: 274px;
+    margin-bottom: 34px;
+    margin-top: 9px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    row-gap: 11px;
+}
+
+.footer__list-form-input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+    border-radius: 0;
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 28px;
+    padding-left: 0;
+}
+
+.footer__list-form-button {
+    width: 29px;
+    height: 29px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+    position: absolute;
+    position: absolute;
+    right: 3px;
+    top: 5px;
+    padding-bottom: 4px;
+}
+
+.footer__list-form-input:focus {
+    background: transparent;
+    box-shadow: none;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.footer__list-form-input::placeholder {
+    color: #ffffff;
+    opacity: 0.6;
+    font-size: 13px;
+    line-height: 28px;
+}
+
+.footer__list-form-text {
+    color: #ffffff;
+    opacity: 0.4;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.footer__list-policy-group {
+    padding: 0;
+}
+
+.footer__list-policy-link {
+    text-transform: uppercase;
+    color: #707076;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 18px;
+    background-color: transparent;
+    text-decoration: underline;
+    border: none;
+    padding: 0;
+}

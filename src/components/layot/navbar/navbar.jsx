@@ -17,8 +17,10 @@ export default function NavBar () {
             <Nav.Link className="wear__toolbar-link" onClick={(e) => {e.preventDefault(); navigate('/wear-page')}}>
                 <img src={cartIcon} alt="Корзина" width="17" height="20" />
             </Nav.Link>
-            <span className="wear__toolbar-price">{totalPrice} ₽</span>
-            <Badge pill className="wear__toolbar-count" bg="#49D0FF">{itemsCount}</Badge>
+            <div className={`wear__toolbar-group ${totalPrice || itemsCount ? '' : 'wear__toolbar-group-hidden'}`}>
+                <span className="wear__toolbar-price">{totalPrice} ₽</span>
+                <Badge pill className="wear__toolbar-count" bg="#49D0FF">{itemsCount}</Badge>
+            </div>
         </div>
     );
 
@@ -38,8 +40,8 @@ export default function NavBar () {
                     <Nav.Link color="white" className="wear__navigation-link" onClick={() => navigate('/wear-page')}>Одежда</Nav.Link>
                     <Nav.Link className="wear__navigation-link" onClick={() => navigate('/wear-page')}>Обувь</Nav.Link>
                     <Nav.Link className="wear__navigation-link" onClick={() => navigate('/wear-page')}>Аксессуары</Nav.Link>
+                    <Nav.Link className="wear__navigation-link" onClick={() => navigate('/wear-page')}>Бренды</Nav.Link>
                     <Nav.Link className="wear__navigation-link" onClick={() => navigate('/wear-page')}>Расчет стоимости</Nav.Link>
-                    <Nav.Link className="wear__navigation-link" onClick={() => navigate('/wear-page')}>Одежда</Nav.Link>
                     <NavDropdown className="wear__navigation-dropdown" title="Информация" id="basic-nav-dropdown">
                         <NavDropdown.Item className="wear__navigation-dropdown-link" onClick={() => navigate('/wear-page')}>Наш Блог</NavDropdown.Item>
                         <NavDropdown.Item className="wear__navigation-dropdown-link" onClick={() => navigate('/wear-page')}>Наши контакты</NavDropdown.Item>
