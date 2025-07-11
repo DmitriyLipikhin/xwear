@@ -1,0 +1,83 @@
+.personal__categories-container {
+    padding: 0;
+    padding-top: 6px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+    opacity: 0;
+}
+
+.personal__categories-container.show {
+    opacity: 1;
+    transition: 0.1s ease;
+}
+
+.personal__categories-title {
+    margin: 0;
+    font-size: 22px;
+    color: #303030;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.personal__categories-list {
+    display: flex;
+    gap: 30px;
+}
+
+.personal__categories-button {
+    padding: 33px 94px;
+    width: 317px;
+    font-size: 17px;
+    font-weight: 600;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    border-radius: 5px; 
+    outline: 1px #F6F6F6 solid; 
+    outline-offset: -1px;
+    border: none;
+    color: #121214;
+}
+
+.personal__categories-button:not(.active):hover,
+.personal__categories-button:not(.active):focus,
+.personal__categories-button.active {
+    outline: 1px #49d0ff solid; 
+    background: transparent;
+    color: #121214;
+}
+
+.personal__categories-button::before {
+    content: "";
+    display: block;
+    mask-repeat: no-repeat;
+    background-color: #b0b0b0;
+    mask-size: contain;
+}
+
+.personal__categories-button-user::before {
+    width: 30px;
+    height: 30px;
+    mask-image: url(../../../assets/icons/user.svg);
+}
+
+.personal__categories-button-order-list::before {
+    mask-image: url(../../../assets/icons/user-order.svg);
+    width: 41px;
+    height: 30px;
+}
+
+.personal__categories-button-user-address::before {
+    mask-image: url(../../../assets/icons/user-address.svg);
+    width: 23px;
+    height: 30px;
+}
+
+.personal__categories-button:not(.active):hover:before,
+.personal__categories-button:not(.active):focus:before,
+.personal__categories-button.active::before {
+    background-color: #121214;
+}

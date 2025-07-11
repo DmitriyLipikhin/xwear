@@ -33,6 +33,7 @@
     text-transform: uppercase;
     padding: 0;
     line-height: 28px;
+    letter-spacing: 1px;
 }
 
 .footer__list-link {
@@ -42,6 +43,12 @@
     background: transparent;
     border: none;
     padding: 0;
+}
+
+.footer__list-link-tel {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
 }
 
 .footer__list-link:not(.active):hover {
@@ -63,25 +70,32 @@
     font-size: 12px;
     text-transform: uppercase;
     line-height: 28px;
-    margin-top: 5px;
     margin-bottom: -7px;
 }
 
 .footer__list-row {
-    margin-left: 0;
-    column-gap: 15px;
+    margin-left: -1px;
+    column-gap: 13px;
 }
 
 .footer__list-column {
     padding: 0;
     margin-left: 0;
 }
-
-.footer__list-social {
+.footer__list-social,
+.footer__list-social.active {
     background: transparent;
     border: none;
     padding: 0;
 }
+
+.footer__list-social:not(.active):hover,
+.footer__list-social:not(.active):focus {
+    background: transparent;
+    opacity: 0.8;
+    transition: 0.3s ease;
+}
+
 
 .footer__list-form {
     width: 274px;
@@ -153,4 +167,11 @@
     text-decoration: underline;
     border: none;
     padding: 0;
+}
+
+.footer__list-policy-link:not(.active):hover,
+.footer__list-policy-link:not(.active):focus {
+    background: transparent;
+    color: #ffffff;
+    transition: 0.3s ease;
 }

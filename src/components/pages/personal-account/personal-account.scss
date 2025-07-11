@@ -1,0 +1,18 @@
+.personal {
+    padding: 29px 0 113px;
+}
+.personal__title {
+    font-size: 31px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 42px;
+    font-family: "RF Dewi Expanded";
+    margin-bottom: 46px;
+}
+
+.personal__container {
+    padding: 0;
+    display: flex;
+    column-gap: 29px;
+    max-width: 1354px;
+}

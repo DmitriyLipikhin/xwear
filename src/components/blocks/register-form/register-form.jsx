@@ -14,7 +14,7 @@ export default function RegisterForm () {
 
     return (
         <div className="login__register-container">
-            <h2 className="login__form-title">Регистрация</h2>
+            <h2 className="login__register-form-title">Регистрация</h2>
             <form className="login__register-form" onSubmit={cancelSubmit}>
                 <div className="login__register-form-group">
                     <label className="login__register-form-label" htmlFor="login">Email адрес:</label>

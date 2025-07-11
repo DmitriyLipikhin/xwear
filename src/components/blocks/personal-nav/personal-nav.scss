@@ -1,0 +1,113 @@
+.personal__nav-container {
+    padding: 28px 35px 22px 36px;
+    border-radius: 5px; 
+    border: 1px #E9EAEE solid;
+    position: relative;
+    width: 317px;
+    min-width: 317px;
+    align-self: flex-start;
+}
+
+.personal__nav-list {
+    row-gap: 21px;
+}
+
+.personal__nav-button {
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    column-gap: 21px;
+}
+
+.personal__nav-button:not(.active):hover,
+.personal__nav-button:not(.active):focus {
+    background: transparent;
+    outline: none;
+}
+
+.personal__nav-button.active {
+    background: transparent;
+    color: #121214;
+}
+
+.personal__nav-button.active::after {
+    content: "";
+    display: block;
+    height: 40px;
+    width: 1px;
+    background-color: #49d0ff;
+    position: absolute;
+    left: -37px;
+    transition: 0.3s ease;
+}
+
+.personal__nav-button.active::before {
+    background-color: #121214;
+}
+
+.personal__nav-button::before {
+    content: "";
+    display: block;
+    background-color: #b0b0b0;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    transition: 0.3s ease;
+}
+
+.personal__nav-button:hover::before,
+.personal__nav-button:active::before,
+.personal__nav-button:focus::before  {
+    background-color: #121214;
+}
+
+.personal__nav-button--user::before{
+    mask-image: url("../../../assets/icons/user.svg");
+    width: 19px;
+    height: 21px;
+}
+
+.personal__nav-button--user-edit::before {
+    mask-image: url("../../../assets/icons/user-edit.svg");
+    width: 19px;
+    height: 19px;
+}
+
+.personal__nav-button--order-history::before {
+    mask-image: url("../../../assets/icons/user-order-history.svg");
+    width: 19px;
+    height: 19px;
+}
+
+.personal__nav-button--user-order::before  {
+    mask-image: url("../../../assets/icons/user-order.svg");
+    width: 19px;
+    height: 19px;
+}
+
+.personal__nav-button--address::before {
+    mask-image: url("../../../assets/icons/user-address.svg");
+    width: 17px;
+    height: 23px;
+}
+
+.personal__nav-button--address-edit::before  {
+    mask-image: url("../../../assets/icons/user-address-edit.svg");
+    width: 19px;
+    height: 19px;
+}
+
+.personal__nav-button--password::before {
+    mask-image: url("../../../assets/icons/user-password.svg");
+    width: 19px;
+    height: 24px;
+}
+
+.personal__nav-button--exit::before {
+    mask-image: url("../../../assets/icons/user-exit.svg");
+    width: 19px;
+    height: 14px;
+}

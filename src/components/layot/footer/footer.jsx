@@ -42,7 +42,7 @@ export default function Footer() {
             <ListGroup className="footer__list" variant="flush">
               <ListGroup.Item className="footer__list-title" active>Контакты</ListGroup.Item>
               <ListGroup.Item className="footer__list-link" action href="mailto:info@xwear.info">info@xwear.info</ListGroup.Item>
-              <ListGroup.Item className="footer__list-link" action href="tel:+7 993 608 38 85">+7 993 608 38 85</ListGroup.Item>
+              <ListGroup.Item className="footer__list-link footer__list-link-tel" action href="tel:+7 993 608 38 85">+7 993 608 38 85</ListGroup.Item>
               <ListGroup.Item className="footer__list-social-title" active>Мессенджеры</ListGroup.Item>
               <Row className="footer__list-row">
                 <Col className="footer__list-column" md={2}>

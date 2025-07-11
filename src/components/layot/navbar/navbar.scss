@@ -1,14 +1,15 @@
 .wear__container {
-    padding: 29px 277px 31px 280px;
+    padding: 29px 0 31px;
 }
 
 .wear__group {
     padding: 0;
-    max-width: 1560px;
+    max-width: 1364px;
 }
 
 .wear__logo {
     padding: 0;
+    margin-left: 2px;
 }
 
 .wear__navigation-list {
@@ -22,6 +23,7 @@
     &:focus {
         color: #ffffff;
         opacity: 0.7;
+        transition: 0.3s ease;
     }
 }
 

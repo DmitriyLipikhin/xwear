@@ -1,0 +1,43 @@
+.input__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 14px 22px 14px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    position: relative;
+    width: 433px;
+}
+
+.error {
+    outline: 1px solid #ff0000;
+}
+
+.input__label {
+    font-size: 13px;
+    color: #3c3d44;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.input__field {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #424347;
+}
+
+.input__field::placeholder {
+    color: #cdcfdb;
+    opacity: 0.3;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.input__error-message {
+    position: absolute;
+    bottom: -40px;
+    color: rgb(255, 0, 0);
+}

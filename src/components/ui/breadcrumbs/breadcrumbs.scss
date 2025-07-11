@@ -1,0 +1,18 @@
+.breadcrumb {
+    margin-left: -680px;
+    margin-top: 12px;
+}
+
+.breadcrumb-item+.breadcrumb-item {
+    padding-left: 16px;
+}
+
+.breadcrumb-item+.breadcrumb__item::before {
+    padding-right: 14px;
+}
+
+.breadcrumb__item a{
+    text-decoration: none;
+    color: #121214;
+    font-size: 13px;
+}
